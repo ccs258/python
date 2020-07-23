@@ -129,16 +129,16 @@ else:
 
 通过上节知道，for 循环是对容器进行迭代的过程，什么是迭代？迭代就是从某个容器对象中逐个地读取元素，直到容器中没有更多元素为止。
 
-`class MyRange:`
-`...     def __init__(self, num):`
-`...         self.num = num`
-`...`
-`for i in MyRange(10):`
-`...     print(i)`
-`...`
-`Traceback (most recent call last):`
-`File "<stdin>", line 1, in <module>`
-`TypeError: 'MyRange' object is not iterable`
+```
+class MyRange:
+def __init__(self, num):
+        self.num = num
+for i in MyRange(10):
+    print(i)
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+TypeError: 'MyRange' object is not iterable
+```
 
 MyRange 不是一个可迭代对象，所以它不能用于迭代，那么到底什么样的对象才称得上是可迭代对象(iterable)呢？
 
