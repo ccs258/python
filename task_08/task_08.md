@@ -28,6 +28,7 @@ myClass.myFunc()
 """
 myModule.func()
 myModule.Myclass.myFunc()
+
 """
 
 ```
